@@ -1,0 +1,29 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww17280\viewh12200\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 VP_VR_SimpleSkybox180Video\
+- VR, Metal\
+- Using Video Player Component\
+- There are no limitations on using the Video Player Component within VR mode due as VR mode does not use the PolySpatial features\
+- There is no need Render texture to be updated manually \
+- Can refer to the \'93VideoPlayer\'94 object in this scene\
+	- Create RT_1440pVideo Render Texture\
+	- Create M_180Video_Skybox material (Skybox/Panoramic)\
+		- The Image type is 180 Degrees\
+		- Set RT_1440pVideo as M_360Video's Spherical\
+	- Add Video Player Component to GameObject\
+		- Set the Render Mode to Render Texture\
+		- Set the Video Clip and Target Texture (RT_1440pVideo)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 - Can refer to the \'93GameManager\'94 object in this scene\
+	- Create the MonoBehaviour script named \'93VideoPlayerManager\'94\
+	- The script has Skybox Material and VideoPlayer as member variables\
+	- Add Video Player Manager script to GameObject\
+		- Set the M_180Video_Skybox\
+		- Set the VideoPlayer component from the \'93VideoPlayer\'94 object\
+	- In this script gonna set Skybox Material to M_180Video_Skybox\
+}
