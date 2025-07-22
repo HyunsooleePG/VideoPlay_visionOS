@@ -1,0 +1,21 @@
+# VP_VR_SimpleSkybox180Video
+
+- VR, Metal
+- Using Video Player Component
+- There are no limitations on using the Video Player Component within VR mode due as VR mode does not use the PolySpatial features
+- There is no need Render texture to be updated manually 
+- The following are the steps for implementing the "VideoPlayer" object in this scene
+  - Create `RT_1440pVideo` Render Texture
+  - Create `M_180Video_Skybox` material (Skybox/Panoramic)
+    - The Image type is 180 Degrees
+    - Set `RT_1440pVideo` as `M_360Video`'s Spherical
+  - Add Video Player Component to GameObject
+    - Set the Render Mode to Render Texture
+    - Set the Video Clip and Target Texture (`RT_1440pVideo`)
+- The following are the steps for implementing the "GameManager" object in this scene
+  - Create the MonoBehaviour script named "VideoPlayerManager"
+  - The script has Skybox Material and VideoPlayer as member variables
+  - Add Video Player Manager script to GameObject
+    - Set the `M_180Video_Skybox`
+    - Set the VideoPlayer component from the "VideoPlayer" object
+  - In this script gonna set Skybox Material to `M_180Video_Skybox`
