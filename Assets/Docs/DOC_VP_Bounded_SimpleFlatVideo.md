@@ -1,12 +1,12 @@
 # VP_Bounded_SimpleFlatVideo
 
-- **MR(Bounded), RealityKit**
-- **Using Video Player Component**
-- **There are limitations to using the Video Player Component within PolySpatial**
+- MR(Bounded), RealityKit
+- Using Video Player Component
+- There are limitations to using the Video Player Component within PolySpatial
   - Refer: [Unity Video Player Support](https://docs.unity3d.com/Packages/com.unity.polyspatial.visionos@2.2/manual/VideoComponent.html#unity-video-player-support)
-- **If gonna update a RenderTexture outside of a call to `Camera.Render` needs to be updated manually**
+- If gonna update a RenderTexture outside of a call to `Camera.Render` needs to be updated manually
   - [Manual Dirtying Documentation](https://docs.unity3d.com/Packages/com.unity.polyspatial.visionos@2.2/manual/RenderTextures.html#manual-dirtying)
-- **Can refer to the "Screen" object in this scene**
+- The following are the steps for implementing the "Screen" object in this scene
   - Create `M_FlatVideo` material (URP/Unlit)
   - Add a Quad mesh to the scene and use the `M_FlatVideo` to the mesh material
   - Create `RT_Video` Render Texture
