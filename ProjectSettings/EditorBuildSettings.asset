@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Scenes/SC_VP_Bounded_SimpleFlatVideo.unity
+    path: Assets/Scenes/VideoPlayer/SC_VP_Bounded_SimpleFlatVideo.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 0
-    path: Assets/Scenes/SC_VP_Unbounded_SimpleFlatVideo.unity
+    path: Assets/Scenes/VideoPlayer/SC_VP_Unbounded_SimpleFlatVideo.unity
     guid: b7ff33716f1734ff3a1c39604a8694f8
   - enabled: 1
-    path: Assets/Scenes/SC_VP_Unbounded_Simple360Video.unity
+    path: Assets/Scenes/VideoPlayer/SC_VP_Unbounded_Simple360Video.unity
     guid: 381bf83c3435f4b42a8abd3bce03e30b
   m_configObjects:
     UnityEditor.XR.VisionOS.VisionOSSettings: {fileID: 11400000, guid: 54baee92f79234137b87d14a2e97a59e, type: 2}
